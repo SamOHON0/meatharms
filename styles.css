@@ -832,3 +832,11 @@ footer ul li a:hover { color: var(--accent); }
   .chat-window { right: 20px; left: 20px; max-width: none; }
   .figures { flex-wrap: wrap; gap: 26px; }
 }
+
+/* ---------- Logo image ---------- */
+.logo-img { height: 60px; width: auto; display: block; }
+.nav.scrolled .logo-img { height: 50px; transition: height 0.3s ease; }
+.footer-logo { height: 84px; width: auto; margin-bottom: 18px; }
+@media (max-width: 540px) {
+  .logo-img { height: 48px; }
+}

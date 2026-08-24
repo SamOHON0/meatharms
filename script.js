@@ -4,10 +4,7 @@ const footerHTML = `
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="logo">
-          The Meath Arms
-          <span class="sub">Country Inn, Est. 1728</span>
-        </div>
+        <img src="/images/logo-nav.png" alt="Paddy's, The Meath Arms" class="footer-logo">
         <p class="tagline">A family-run country inn and village bar on Main Street, Aughrim, Co. Wicklow. Ten en suite rooms, a proper pint and a warm Wicklow welcome.</p>
         <div class="socials">
           <!-- TODO: confirm Facebook URL with Niall (he typed "TheMesthArms") -->
