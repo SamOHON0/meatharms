@@ -21,7 +21,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/styles.css">
 
@@ -63,14 +63,14 @@
     <div class="nav-inner">
       <a href="/" class="logo">
         The Meath Arms
-        <span class="sub">Country Inn &middot; Est. 1728</span>
+        <span class="sub">Country Inn, Est. 1728</span>
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="/" class="active">Home</a></li>
         <li><a href="/rooms.html">Rooms</a></li>
         <li><a href="/bar.html">The Bar</a></li>
         <li><a href="/contact.html">Contact</a></li>
-        <li><a href="https://www.booking.com/hotel/ie/meath-arms-country-inn.html" target="_blank" rel="noopener" class="btn btn-primary nav-cta">Book a room</a></li>
+        <li><a href="https://www.booking.com/hotel/ie/meath-arms-country-inn.html" target="_blank" rel="noopener" class="btn btn-primary">Book a room</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -79,192 +79,145 @@
   </nav>
 
   <!-- ===== HERO ===== -->
-  <section class="hero" id="top">
+  <header class="hero">
     <div class="hero-media">
       <img src="/images/hero.jpg" alt="The bar at The Meath Arms Country Inn, Aughrim" loading="eager" fetchpriority="high">
     </div>
     <div class="hero-scrim"></div>
     <div class="container hero-inner">
       <div class="hero-content" data-reveal>
-          <span class="eyebrow">Country Inn &middot; Bar &middot; Aughrim, Co. Wicklow</span>
-          <h1>A Wicklow welcome, <span class="italic">three centuries</span> in the making.</h1>
-          <p class="lead">The Meath Arms has stood on Main Street in Aughrim since 1728. Ten comfortable en suite rooms above a proper village bar, run by the Phelan family, with live music at the weekends.</p>
-          <div class="hero-ctas">
-            <a href="https://www.booking.com/hotel/ie/meath-arms-country-inn.html" target="_blank" rel="noopener" class="btn btn-primary">Book a room</a>
-            <a href="tel:+35340236460" class="btn btn-secondary">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-              </svg>
-              0402 36460
-            </a>
-          </div>
-          <div class="hero-trust">
-            <div class="trust-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              Serving Aughrim since 1728
-            </div>
-            <div class="trust-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-              Ten en suite rooms
-            </div>
-            <div class="trust-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
-              Live music at weekends
-            </div>
-          </div>
+        <span class="eyebrow">Aughrim, Co. Wicklow</span>
+        <h1>Three centuries of <span class="italic">Wicklow</span> welcome.</h1>
+        <p class="lead">A family-run inn on Main Street, Aughrim since 1728. Ten rooms upstairs, a proper bar below.</p>
+        <div class="hero-ctas">
+          <a href="https://www.booking.com/hotel/ie/meath-arms-country-inn.html" target="_blank" rel="noopener" class="btn btn-primary">Book a room</a>
+          <a href="tel:+35340236460" class="btn btn-ghost">Call 0402 36460</a>
+        </div>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- ===== STORY FEATURE ===== -->
-  <section class="about">
+  <!-- ===== STORY ===== -->
+  <section>
     <div class="container">
-      <div class="story-feature">
-        <div class="sf-media" data-reveal>
-          <figure class="sf-main sf-carousel">
+      <div class="split">
+        <div class="split-media" data-reveal>
+          <figure class="frame tall fade-set">
             <img src="/images/bar-1.jpg" alt="The lounge and stone wall at The Meath Arms" loading="lazy">
             <img src="/images/bar-2.jpg" alt="The snugs and stone chimney in the lounge" loading="lazy">
-            <img src="/images/hero.jpg" alt="The bar counter at The Meath Arms" loading="lazy">
+            <img src="/images/bar-3.jpg" alt="Looking across the room from the bar" loading="lazy">
+          </figure>
+          <figure class="inset">
+            <img src="/images/exterior.jpg" alt="The Meath Arms on Main Street, Aughrim" loading="lazy">
           </figure>
         </div>
-
-        <div class="sf-body" data-reveal>
+        <div class="split-body" data-reveal>
           <h2>The heart of the village since 1728.</h2>
-          <p class="sf-lead">The Meath Arms is one of Wicklow's oldest inns, run today by the Phelan family. It's the kind of place where the fire is lit, the pint is good and nobody's a stranger for long.</p>
-          <p>Whether you're walking the hills, touring the Garden County or just passing through Aughrim, there's a seat at the bar and a bed upstairs.</p>
-
-          <dl class="sf-facts">
-            <div class="sf-fact">
-              <dt>Est. 1728</dt>
-              <dd>Nearly three hundred years of hospitality on Main Street, Aughrim.</dd>
-            </div>
-            <div class="sf-fact">
-              <dt>Family-run</dt>
-              <dd>Run by the Phelan family with the kind of welcome you can't fake.</dd>
-            </div>
-            <div class="sf-fact">
-              <dt>Ten en suite rooms</dt>
-              <dd>Comfortable rooms upstairs, each with its own bathroom and free Wi-Fi.</dd>
-            </div>
-            <div class="sf-fact">
-              <dt>An award-winning village</dt>
-              <dd>Aughrim is a national Tidy Towns winner in the heart of the Wicklow hills.</dd>
-            </div>
-          </dl>
-
-          <a href="/rooms.html" class="btn btn-rust">See the rooms</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== WHAT'S HERE ===== -->
-  <section id="explore">
-    <div class="container">
-      <div class="section-head" data-reveal>
-        <span class="eyebrow">The Meath Arms</span>
-        <h2>A bed, a pint and the Wicklow hills.</h2>
-        <p>Everything you need for a night in the Garden County, all under the one roof.</p>
-      </div>
-      <div class="cat-grid">
-        <a href="/rooms.html" class="cat-card" data-reveal>
-          <div class="cat-img"><img src="/images/room-1.jpg" alt="A guest room at The Meath Arms" loading="lazy"></div>
-          <div class="cat-body">
-            <h3>Stay the Night</h3>
-            <p>Ten en suite rooms, from cosy doubles to garden and mountain views. Check-in from 2pm.</p>
-            <span class="ask">See the rooms →</span>
-          </div>
-        </a>
-        <a href="/bar.html" class="cat-card" data-reveal>
-          <div class="cat-img"><img src="/images/bar-3.jpg" alt="The bar at The Meath Arms" loading="lazy"></div>
-          <div class="cat-body">
-            <h3>The Bar</h3>
-            <p>A proper village pub. Open from 2pm weekdays and midday at weekends, with live music Saturday and Sunday.</p>
-            <span class="ask">Visit the bar →</span>
-          </div>
-        </a>
-        <a href="/contact.html" class="cat-card" data-reveal>
-          <div class="cat-img"><img src="/images/aughrim.jpg" alt="The view towards the Wicklow hills from The Meath Arms" loading="lazy"></div>
-          <div class="cat-body">
-            <h3>Explore Aughrim</h3>
-            <p>Hill walking, golf and fishing on the doorstep, an hour and a quarter from Dublin.</p>
-            <span class="ask">Find us →</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== STORY STRIP ===== -->
-  <section class="story">
-    <div class="container">
-      <div class="story-grid">
-        <div data-reveal>
-          <span class="eyebrow">Your Base in the Garden County</span>
-          <h2>Made for walkers, golfers and wanderers.</h2>
-          <p>Aughrim sits in a green valley in the Wicklow hills, a national Tidy Towns winner surrounded by rivers, forests and golf courses.</p>
-          <p>We look after walkers with taxi and luggage transfers, and after a day on the hills there's a warm bar and a comfortable bed waiting.</p>
-          <div class="story-stats">
-            <div class="stat">
+          <p class="opener">The Meath Arms is one of Wicklow's oldest inns, run today by the Phelan family. The fire is lit, the pint is good and nobody stays a stranger for long.</p>
+          <p>Walkers come down off the hills, tourers stop on their way through the Garden County, and the locals hold up their end of the bar. There has been a welcome waiting here for nearly three hundred years.</p>
+          <div class="figures">
+            <div class="figure">
               <div class="num">1728</div>
               <div class="label">Serving Aughrim ever since</div>
             </div>
-            <div class="stat">
+            <div class="figure">
               <div class="num">10</div>
               <div class="label">En suite rooms upstairs</div>
             </div>
+            <div class="figure">
+              <div class="num">1</div>
+              <div class="label">Family keeping the fire lit</div>
+            </div>
           </div>
         </div>
-        <div class="story-visual" data-reveal>
-          <img src="/images/exterior.jpg" alt="The Meath Arms Country Inn on Main Street, Aughrim">
-          <span class="label">"The heart of the village."</span>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== WHAT GUESTS SAY ===== -->
-  <!-- TODO: swap these summaries for real named Booking.com review quotes before launch -->
-  <section class="reviews" id="reviews">
+  <!-- ===== ROOMS FEATURE ===== -->
+  <section style="padding-top: 0;">
     <div class="container">
-      <div class="section-head" data-reveal>
-        <span class="eyebrow">What Guests Mention</span>
-        <h2>The things people write home about.</h2>
-        <p>A few of the things guests mention again and again on Booking.com.</p>
-      </div>
-      <div class="reviews-grid">
-        <div class="review" data-reveal>
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>Spacious, spotless rooms. Comfortable en suite rooms that guests consistently rate for space and cleanliness.</p>
-          <div class="who">&mdash; Guests on Booking.com</div>
+      <div class="feature" data-reveal>
+        <div class="feature-media">
+          <img src="/images/room-1.jpg" alt="A deluxe room at The Meath Arms" loading="lazy">
         </div>
-        <div class="review" data-reveal>
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>A warm family welcome. The Phelan family and team are regularly singled out for their friendliness and helpfulness.</p>
-          <div class="who">&mdash; Guests on Booking.com</div>
+        <div class="feature-body">
+          <span class="eyebrow">Stay the night</span>
+          <h2>Sleep over one of Wicklow's oldest bars.</h2>
+          <p>Ten en suite rooms, from cosy doubles to garden and mountain views, with a cooked breakfast in the morning.</p>
+          <ul class="tick-list">
+            <li>Every room en suite, with free Wi-Fi and parking</li>
+            <li>Check-in from 2pm, pets welcome by arrangement</li>
+            <li>Taxis and luggage transfers arranged for walkers</li>
+          </ul>
+          <div class="hero-ctas">
+            <a href="/rooms.html" class="btn btn-primary">See the rooms</a>
+          </div>
         </div>
-        <div class="review" data-reveal>
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>A great base for Wicklow. Walkers and tourers rate the location for the Wicklow hills, golf and fishing.</p>
-          <div class="who">&mdash; Guests on Booking.com</div>
-        </div>
-      </div>
-      <div class="reviews-cta" data-reveal>
-        <a href="https://www.booking.com/hotel/ie/meath-arms-country-inn.html" target="_blank" rel="noopener" class="btn btn-rust">Read reviews on Booking.com</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== CTA BANNER ===== -->
+  <!-- ===== BAR BAND ===== -->
+  <section class="band">
+    <div class="band-media">
+      <img src="/images/carousel-01.jpg" alt="The bar counter at The Meath Arms" loading="lazy">
+    </div>
+    <div class="band-scrim"></div>
+    <div class="container">
+      <div class="band-panel" data-reveal>
+        <h2>A proper village bar.</h2>
+        <p>Good pints, an open fire and live music at the weekends. Drop in for one, stay for the session.</p>
+        <div class="hours">
+          <div class="hours-row"><span>Monday to Friday</span><span>2:00pm to 11:30pm</span></div>
+          <div class="hours-row"><span>Saturday &amp; Sunday</span><span>12:00pm to 12:30am</span></div>
+        </div>
+        <a href="/bar.html" class="btn btn-ghost">Visit the bar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOCATION ===== -->
+  <section class="location">
+    <div class="container">
+      <div class="split flip">
+        <div class="split-body" data-reveal>
+          <h2>Made for walkers, golfers and wanderers.</h2>
+          <p class="opener">Aughrim sits in a green valley in the Wicklow hills, a national Tidy Towns winner about an hour and a quarter south of Dublin.</p>
+          <p>The Wicklow trails, golf and river fishing are all on the doorstep. We look after walkers with taxis and luggage transfers, and after a day outside there is a warm bar and a comfortable bed waiting.</p>
+          <a href="/contact.html" class="btn btn-ghost">How to find us</a>
+        </div>
+        <div class="split-media" data-reveal>
+          <figure class="frame tall">
+            <img src="/images/aughrim.jpg" alt="The view towards the Wicklow hills from The Meath Arms" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GUEST WORDS ===== -->
+  <!-- TODO: swap the line below for a real named Booking.com review quote before launch -->
+  <section class="guest-words">
+    <div class="container" data-reveal>
+      <p class="big-quote">Spacious rooms, a warm family welcome and a great base for the Wicklow hills.</p>
+      <p class="quote-attr">What guests mention most in their Booking.com reviews</p>
+      <div class="mention-row">
+        <span class="mention"><strong>Rooms</strong> rated for space and cleanliness</span>
+        <span class="mention"><strong>The Phelans</strong> singled out for the welcome</span>
+        <span class="mention"><strong>Location</strong> loved by walkers and golfers</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
   <section class="cta-banner">
-    <div class="container">
-      <div class="cta-inner" data-reveal>
-        <h2>Stay a night in Aughrim.</h2>
-        <p>Book online, or give us a ring and we'll sort you out directly.</p>
-        <div class="hero-ctas" style="justify-content:center;">
-          <a href="https://www.booking.com/hotel/ie/meath-arms-country-inn.html" target="_blank" rel="noopener" class="btn btn-primary">Book a room</a>
-          <a href="tel:+35340236460" class="btn btn-secondary">Call 0402 36460</a>
-        </div>
+    <div class="container" data-reveal>
+      <h2>Stay a night in Aughrim.</h2>
+      <p>Book online, or give us a ring and we'll sort you out directly.</p>
+      <div class="hero-ctas">
+        <a href="https://www.booking.com/hotel/ie/meath-arms-country-inn.html" target="_blank" rel="noopener" class="btn btn-primary">Book a room</a>
+        <a href="tel:+35340236460" class="btn btn-ghost">Call 0402 36460</a>
       </div>
     </div>
   </section>

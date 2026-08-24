@@ -1,7 +1,9 @@
 # The Meath Arms Country Inn — meath-arms.com
 
-Static HTML/CSS site (SquareTwo house pattern, same structure as Masons Apron).
-Deploy: Vercel, cleanUrls on.
+Static HTML/CSS site. Deploy: Vercel, cleanUrls on.
+Design: dark forest editorial. Deep green (#0f1512) + bone (#ece7da) + single amber accent (#d9a24a).
+Type: Cormorant Garamond display / Figtree body (Google Fonts).
+Shape rule: buttons pill, cards 16px radius, inputs 10px. Single dark theme, page-wide.
 
 ## Client
 Niall Phelan — nphelan74@gmail.com — 0402 36460 — themeatharms@outlook.com

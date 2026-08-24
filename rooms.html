@@ -16,7 +16,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/styles.css">
 </head>
@@ -27,14 +27,14 @@
     <div class="nav-inner">
       <a href="/" class="logo">
         The Meath Arms
-        <span class="sub">Country Inn &middot; Est. 1728</span>
+        <span class="sub">Country Inn, Est. 1728</span>
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="/">Home</a></li>
         <li><a href="/rooms.html" class="active">Rooms</a></li>
         <li><a href="/bar.html">The Bar</a></li>
         <li><a href="/contact.html">Contact</a></li>
-        <li><a href="https://www.booking.com/hotel/ie/meath-arms-country-inn.html" target="_blank" rel="noopener" class="btn btn-primary nav-cta">Book a room</a></li>
+        <li><a href="https://www.booking.com/hotel/ie/meath-arms-country-inn.html" target="_blank" rel="noopener" class="btn btn-primary">Book a room</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -43,148 +43,146 @@
   </nav>
 
   <!-- ===== PAGE HERO ===== -->
-  <section class="page-hero">
-    <div class="container page-hero-inner" data-reveal>
-      <span class="eyebrow">Stay With Us</span>
-      <h1>Ten rooms above one of Wicklow's oldest bars.</h1>
-      <p class="lead">Every room at The Meath Arms is en suite, with free Wi-Fi, heating, toiletries and a proper night's sleep at the end of it. Check-in from 2pm, check-out by 10am.</p>
-      <div class="hero-ctas">
-        <a href="https://www.booking.com/hotel/ie/meath-arms-country-inn.html" target="_blank" rel="noopener" class="btn btn-primary">Check availability</a>
-        <a href="tel:+35340236460" class="btn btn-secondary">Call 0402 36460</a>
-      </div>
-      <!-- TODO: confirm with Niall that breakfast is still served for guests while the restaurant is closed -->
-      <p class="page-note">Staying as part of a walking trip? We can arrange taxis and luggage transfers.</p>
+  <header class="page-hero">
+    <div class="hero-media">
+      <img src="/images/room-1.jpg" alt="A deluxe room at The Meath Arms" loading="eager" fetchpriority="high">
     </div>
-  </section>
+    <div class="hero-scrim"></div>
+    <div class="container hero-inner">
+      <div class="hero-content" data-reveal>
+        <h1>Ten rooms above one of Wicklow's oldest bars.</h1>
+        <p class="lead">Every room is en suite, with free Wi-Fi and parking. Check-in from 2pm, check-out by 10am.</p>
+        <div class="hero-ctas">
+          <a href="https://www.booking.com/hotel/ie/meath-arms-country-inn.html" target="_blank" rel="noopener" class="btn btn-primary">Check availability</a>
+          <a href="tel:+35340236460" class="btn btn-ghost">Call 0402 36460</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-  <!-- ===== ROOM TYPES ===== -->
+  <!-- ===== ROOM GRID ===== -->
   <section>
     <div class="container">
       <div class="section-head" data-reveal>
-        <span class="eyebrow">The Rooms</span>
         <h2>Pick the room that suits.</h2>
-        <p>From cosy doubles to twins and rooms looking out over the garden or the Wicklow hills.</p>
+        <p>From cosy doubles to twins and rooms looking out over the garden or the hills.</p>
       </div>
-      <div class="cat-grid">
-        <div class="cat-card" data-reveal>
-          <div class="cat-img"><img src="/images/room-1.jpg" alt="Deluxe double room at The Meath Arms" loading="lazy"></div>
-          <div class="cat-body">
+      <div class="room-grid">
+        <article class="room wide" data-reveal>
+          <div class="room-img"><img src="/images/room-1.jpg" alt="Deluxe room with a king sleigh bed" loading="lazy"></div>
+          <div class="room-body">
             <h3>Deluxe Room</h3>
             <div class="room-meta"><span>Double or twin</span><span>En suite</span><span>Sleeps 2</span></div>
             <p>Our most comfortable rooms, freshly refurbished with a double bed or two singles.</p>
           </div>
-        </div>
-        <div class="cat-card" data-reveal>
-          <div class="cat-img"><img src="/images/room-2.jpg" alt="Deluxe room with garden view" loading="lazy"></div>
-          <div class="cat-body">
+        </article>
+        <article class="room slim" data-reveal>
+          <div class="room-img"><img src="/images/room-2.jpg" alt="Deluxe room with garden view" loading="lazy"></div>
+          <div class="room-body">
             <h3>Deluxe Garden View</h3>
-            <div class="room-meta"><span>Two beds</span><span>En suite</span><span>Garden view</span></div>
+            <div class="room-meta"><span>Two beds</span><span>Garden view</span></div>
             <p>A deluxe room looking out over the garden at the back of the inn.</p>
           </div>
-        </div>
-        <div class="cat-card" data-reveal>
-          <div class="cat-img"><img src="/images/room-3.jpg" alt="Mountain view room at The Meath Arms" loading="lazy"></div>
-          <div class="cat-body">
+        </article>
+        <article class="room slim" data-reveal>
+          <div class="room-img"><img src="/images/room-3.jpg" alt="The view towards the hills from a Mountain View room" loading="lazy"></div>
+          <div class="room-body">
             <h3>Mountain View</h3>
             <div class="room-meta"><span>En suite</span><span>Hill views</span></div>
             <p>Wake up to the Wicklow hills. A favourite with walkers and tourers.</p>
           </div>
-        </div>
-        <div class="cat-card" data-reveal>
-          <div class="cat-img"><img src="/images/room-4.jpg" alt="Standard double room" loading="lazy"></div>
-          <div class="cat-body">
+        </article>
+        <article class="room slim" data-reveal>
+          <div class="room-img"><img src="/images/room-4.jpg" alt="Standard double room" loading="lazy"></div>
+          <div class="room-body">
             <h3>Standard Room</h3>
-            <div class="room-meta"><span>Double</span><span>En suite</span><span>Sleeps 2</span></div>
+            <div class="room-meta"><span>Double</span><span>Sleeps 2</span></div>
             <p>Everything you need for a comfortable night, at a fair price.</p>
           </div>
-        </div>
-        <div class="cat-card" data-reveal>
-          <div class="cat-img"><img src="/images/room-5.jpg" alt="Standard twin room" loading="lazy"></div>
-          <div class="cat-body">
+        </article>
+        <article class="room slim" data-reveal>
+          <div class="room-img"><img src="/images/room-5.jpg" alt="Standard twin room" loading="lazy"></div>
+          <div class="room-body">
             <h3>Standard Twin</h3>
-            <div class="room-meta"><span>Two beds</span><span>En suite</span><span>Sleeps 2</span></div>
+            <div class="room-meta"><span>Two beds</span><span>Sleeps 2</span></div>
             <p>Two single beds, handy for friends walking the hills together.</p>
           </div>
-        </div>
-        <div class="cat-card" data-reveal>
-          <div class="cat-img"><img src="/images/room-6.jpg" alt="Economy room at The Meath Arms" loading="lazy"></div>
-          <div class="cat-body">
+        </article>
+        <article class="room row" data-reveal>
+          <div class="room-img"><img src="/images/room-6.jpg" alt="Economy room at The Meath Arms" loading="lazy"></div>
+          <div class="room-body">
             <h3>Economy Room</h3>
             <div class="room-meta"><span>En suite</span><span>Best value</span></div>
-            <p>A simple, snug room for a night's rest without the frills.</p>
+            <p>A simple, snug room for a night's rest without the frills. Same bar downstairs, same breakfast in the morning, easier on the pocket.</p>
           </div>
-        </div>
+        </article>
       </div>
-      <div style="text-align:center; margin-top:50px;" data-reveal>
-        <a href="https://www.booking.com/hotel/ie/meath-arms-country-inn.html" target="_blank" rel="noopener" class="btn btn-primary">See prices &amp; availability</a>
+      <div style="text-align:center; margin-top: 54px;" data-reveal>
+        <a href="https://www.booking.com/hotel/ie/meath-arms-country-inn.html" target="_blank" rel="noopener" class="btn btn-primary">See prices on Booking.com</a>
       </div>
     </div>
   </section>
 
   <!-- ===== BREAKFAST ===== -->
   <!-- TODO: confirm with Niall that breakfast still runs for guests while the restaurant is closed -->
-  <section class="about">
+  <section class="location">
     <div class="container">
-      <div class="story-feature">
-        <div class="sf-media" data-reveal>
-          <figure class="sf-main sf-carousel">
+      <div class="split">
+        <div class="split-media" data-reveal>
+          <figure class="frame tall fade-set">
             <img src="/images/breakfast-1.jpg" alt="A full Irish breakfast at The Meath Arms" loading="lazy">
             <img src="/images/breakfast-2.jpg" alt="The breakfast table with fruit, cereals and juices" loading="lazy">
             <img src="/images/breakfast-3.jpg" alt="The dining room at The Meath Arms" loading="lazy">
           </figure>
         </div>
-        <div class="sf-body" data-reveal>
+        <div class="split-body" data-reveal>
+          <span class="eyebrow">Breakfast</span>
           <h2>Start the day properly.</h2>
-          <p class="sf-lead">A cooked Irish breakfast is part of your stay, served in the dining room each morning.</p>
+          <p class="opener">A cooked Irish breakfast is part of your stay, served in the dining room each morning.</p>
           <p>Fresh fruit, cereals and juices on the table, and a full Irish done right from the kitchen. The kind of start you want before a day on the hills.</p>
-          <a href="https://www.booking.com/hotel/ie/meath-arms-country-inn.html" target="_blank" rel="noopener" class="btn btn-rust">Book your stay</a>
+          <a href="https://www.booking.com/hotel/ie/meath-arms-country-inn.html" target="_blank" rel="noopener" class="btn btn-ghost">Book your stay</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== GOOD TO KNOW ===== -->
-  <section class="reviews">
+  <!-- ===== PRACTICAL ===== -->
+  <section>
     <div class="container">
       <div class="section-head" data-reveal>
-        <span class="eyebrow">Good to Know</span>
         <h2>The practical bits.</h2>
       </div>
-      <div class="steps-grid">
-        <div class="step" data-reveal>
-          <div class="num-circle">✓</div>
-          <h4>Check-in &amp; out</h4>
-          <p>Check-in from 2pm, check-out by 10am. Ring us if you need flexibility.</p>
+      <div class="practical">
+        <div class="practical-group" data-reveal>
+          <h3>Arriving &amp; leaving</h3>
+          <p><strong>Check-in from 2pm, check-out by 10am.</strong> Ring us on 0402 36460 if you need an earlier arrival or a later start.</p>
+          <p>Free parking at the inn and easy parking on the street.</p>
         </div>
-        <div class="step" data-reveal>
-          <div class="num-circle">✓</div>
-          <h4>Free Wi-Fi &amp; parking</h4>
-          <p>Free Wi-Fi throughout the inn and free parking for guests.</p>
-        </div>
-        <div class="step" data-reveal>
-          <div class="num-circle">✓</div>
-          <h4>Pet friendly</h4>
+        <div class="practical-group" data-reveal>
+          <h3>In the room</h3>
+          <p><strong>Every room is en suite</strong> with free Wi-Fi, heating, toiletries and a hair dryer.</p>
           <p>Well-behaved pets are welcome. Just let us know when you book.</p>
         </div>
-        <div class="step" data-reveal>
-          <div class="num-circle">✓</div>
-          <h4>Walkers welcome</h4>
-          <p>Taxi and luggage transfers arranged for walkers on the Wicklow trails.</p>
+        <div class="practical-group" data-reveal>
+          <h3>For walkers</h3>
+          <p><strong>We arrange taxis and luggage transfers</strong> for walkers on the Wicklow trails, so you can travel light between stops.</p>
+        </div>
+        <div class="practical-group" data-reveal>
+          <h3>Downstairs</h3>
+          <p><strong>The bar is under your bed.</strong> Open from 2pm weekdays and midday at weekends, with live music on Saturdays and Sundays.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== CTA BANNER ===== -->
+  <!-- ===== CTA ===== -->
   <section class="cta-banner">
-    <div class="container">
-      <div class="cta-inner" data-reveal>
-        <h2>Book your night in Aughrim.</h2>
-        <p>Book online in a minute, or ring us directly and we'll look after you.</p>
-        <div class="hero-ctas" style="justify-content:center;">
-          <a href="https://www.booking.com/hotel/ie/meath-arms-country-inn.html" target="_blank" rel="noopener" class="btn btn-primary">Book on Booking.com</a>
-          <a href="tel:+35340236460" class="btn btn-secondary">Call 0402 36460</a>
-        </div>
+    <div class="container" data-reveal>
+      <h2>Book your night in Aughrim.</h2>
+      <p>Book online in a minute, or ring us directly and we'll look after you.</p>
+      <div class="hero-ctas">
+        <a href="https://www.booking.com/hotel/ie/meath-arms-country-inn.html" target="_blank" rel="noopener" class="btn btn-primary">Book a room</a>
+        <a href="tel:+35340236460" class="btn btn-ghost">Call 0402 36460</a>
       </div>
     </div>
   </section>

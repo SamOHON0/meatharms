@@ -6,7 +6,7 @@ const footerHTML = `
       <div>
         <div class="logo">
           The Meath Arms
-          <span class="sub">Country Inn &middot; Est. 1728</span>
+          <span class="sub">Country Inn, Est. 1728</span>
         </div>
         <p class="tagline">A family-run country inn and village bar on Main Street, Aughrim, Co. Wicklow. Ten en suite rooms, a proper pint and a warm Wicklow welcome.</p>
         <div class="socials">
@@ -51,14 +51,14 @@ const footerHTML = `
     </div>
     <div class="footer-bottom">
       <div>© <span id="year"></span> The Meath Arms Country Inn. All rights reserved.</div>
-      <div>Website by <a href="https://squaretwo.ie" target="_blank" rel="noopener" style="color: var(--butter);">Square Two</a></div>
+      <div>Website by <a href="https://squaretwo.ie" target="_blank" rel="noopener">Square Two</a></div>
     </div>
   </div>
 </footer>
 `;
 
 // ===== CHATBOT WIDGET ===== //
-// TODO: ask Niall for a mobile number if he wants a WhatsApp button — landline won't work on wa.me
+// TODO: ask Niall for a mobile number if he wants a WhatsApp button - landline won't work on wa.me
 const widgetsHTML = `
 <button class="chat-button" id="chatBtn" aria-label="Open chat">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
@@ -92,7 +92,7 @@ const widgetsHTML = `
     </button>
   </div>
   <div class="chat-handoff">
-    <a href="tel:+35340236460" style="background: var(--rust);">
+    <a href="tel:+35340236460">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       Call us on 0402 36460
     </a>
@@ -108,12 +108,14 @@ document.getElementById('widgets-placeholder')?.insertAdjacentHTML('afterend', w
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// Nav scroll state
+// Nav scroll state (IntersectionObserver sentinel, no scroll listener)
 const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 30) nav.classList.add('scrolled');
-  else nav.classList.remove('scrolled');
-});
+const sentinel = document.createElement('div');
+sentinel.style.cssText = 'position:absolute;top:0;left:0;height:40px;width:1px;pointer-events:none;';
+document.body.prepend(sentinel);
+new IntersectionObserver(([entry]) => {
+  nav.classList.toggle('scrolled', !entry.isIntersecting);
+}).observe(sentinel);
 
 // Hamburger
 const hamb = document.getElementById('hamburger');
