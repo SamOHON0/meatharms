@@ -1,7 +1,7 @@
 /* ============================================================
    THE MEATH ARMS - dark forest editorial
    Type: Cormorant Garamond (display) / Figtree (body)
-   Shape rule: buttons pill, cards 16px, inputs 10px
+   Shape rule: buttons/pills 8px, cards 16px, inputs 10px
    Theme: single committed dark theme, page-wide
    ============================================================ */
 
@@ -71,7 +71,7 @@ p.lead { font-size: 1.14rem; color: var(--muted); }
   justify-content: center;
   gap: 10px;
   padding: 15px 30px;
-  border-radius: 999px;
+  border-radius: 8px;
   font-weight: 600;
   font-size: 0.97rem;
   font-family: inherit;
@@ -1083,3 +1083,179 @@ footer .tagline { color: #bcc8bb; }
 .chat-handoff a:hover { background: #22382a; color: #f6f2e7; }
 .nav-links a.btn-primary { color: #f6f2e7; }
 .nav-links a.btn-primary:hover { color: #f6f2e7; }
+
+/* ---------- Full-bleed hero, fading into the cream ---------- */
+.hero-full {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 88dvh;
+  padding: 120px 0 90px;
+  overflow: hidden;
+}
+.hero-full .hf-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+}
+.hero-full .hf-media img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 45%;
+}
+.hero-full .hf-media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(0deg, #faf7ef 0%, rgba(250, 247, 239, 0) 26%),
+    linear-gradient(90deg, rgba(18, 26, 20, 0.62) 0%, rgba(18, 26, 20, 0.3) 42%, rgba(18, 26, 20, 0.05) 70%),
+    linear-gradient(180deg, rgba(18, 26, 20, 0.35) 0%, rgba(18, 26, 20, 0) 26%);
+}
+.hero-full .hf-text h1 { color: #f6f2e7; }
+.hero-full .hf-text .lead { color: rgba(246, 242, 231, 0.94); }
+.hero-full .btn-ghost { color: #f6f2e7; border-color: rgba(246, 242, 231, 0.7); background: rgba(15, 20, 15, 0.18); }
+.hero-full .btn-ghost:hover { background: #f6f2e7; color: #22382a; border-color: #f6f2e7; }
+
+@media (max-width: 900px) {
+  .hero-full { min-height: 74dvh; padding: 100px 0 64px; }
+  .hero-full .hf-media::after {
+    background:
+      linear-gradient(0deg, #faf7ef 0%, rgba(250, 247, 239, 0) 20%),
+      linear-gradient(0deg, rgba(18, 26, 20, 0.55) 10%, rgba(18, 26, 20, 0.1) 55%),
+      linear-gradient(180deg, rgba(18, 26, 20, 0.35) 0%, rgba(18, 26, 20, 0) 26%);
+  }
+}
+
+/* ---------- Hero rating badge ---------- */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
+  padding: 10px 18px 10px 12px;
+  background: rgba(250, 247, 239, 0.9);
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+}
+.hero-badge .seal {
+  width: 34px; height: 34px;
+  border-radius: 6px;
+  background: #22382a;
+  color: #d9a24a;
+  display: grid;
+  place-items: center;
+  font-size: 1.05rem;
+}
+.hero-badge .b1 { display: block; font-weight: 600; color: #22382a; font-size: 0.95rem; line-height: 1.3; }
+.hero-badge .b2 { display: block; color: var(--muted); font-size: 0.82rem; }
+
+/* ---------- FAQ accordion ---------- */
+.faq-list { max-width: 780px; }
+.faq-item { border-bottom: 1px solid var(--line-soft); padding: 20px 0; }
+.faq-q {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  color: var(--text);
+  font-weight: 600;
+  padding: 0;
+}
+.faq-q .plus {
+  width: 28px; height: 28px;
+  border-radius: 6px;
+  background: var(--bg-2);
+  color: var(--accent-deep);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+.faq-item.open .faq-q .plus { transform: rotate(45deg); background: #22382a; color: #f6f2e7; }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding-top 0.3s ease; }
+.faq-item.open .faq-a { max-height: 320px; padding-top: 12px; }
+.faq-a p { color: var(--muted); font-size: 1rem; max-width: 62ch; }
+
+/* ---------- Review cards ---------- */
+.score-row { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 56px; }
+.score {
+  padding: 12px 20px;
+  background: var(--panel);
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+.score strong { color: var(--text); font-size: 1.05rem; margin-right: 6px; }
+.review-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.review-card {
+  background: var(--panel);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r-card);
+  padding: 28px 30px;
+}
+.review-card .r-score {
+  display: inline-block;
+  background: #22382a;
+  color: #f6f2e7;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  padding: 4px 10px;
+  margin-bottom: 14px;
+}
+.review-card p {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.45;
+  color: var(--text);
+  margin-bottom: 14px;
+}
+.review-card cite { font-style: normal; font-size: 0.88rem; color: var(--muted); }
+
+/* ---------- Explore cards ---------- */
+.explore-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.explore-card {
+  background: var(--panel);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r-card);
+  padding: 30px 32px;
+}
+.explore-card h3 { margin-bottom: 8px; }
+.explore-card p { color: var(--muted); font-size: 0.98rem; }
+
+/* ---------- Gallery grid ---------- */
+.gallery-grid { columns: 3; column-gap: 18px; }
+.gallery-grid figure {
+  margin: 0 0 18px;
+  border-radius: var(--r-card);
+  overflow: hidden;
+  break-inside: avoid;
+}
+.gallery-grid img { width: 100%; display: block; }
+
+@media (max-width: 900px) {
+  .review-grid, .explore-grid { grid-template-columns: 1fr; }
+  .gallery-grid { columns: 2; }
+}
+@media (max-width: 540px) {
+  .gallery-grid { columns: 1; }
+}

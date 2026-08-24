@@ -25,6 +25,10 @@ const footerHTML = `
           <li><a href="/">Home</a></li>
           <li><a href="/rooms.html">Rooms</a></li>
           <li><a href="/bar.html">The Bar</a></li>
+          <li><a href="/explore.html">Explore Aughrim</a></li>
+          <li><a href="/reviews.html">Guest Reviews</a></li>
+          <li><a href="/faqs.html">FAQs</a></li>
+          <li><a href="/gallery.html">Gallery</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
       </div>

@@ -1,11 +1,12 @@
 # The Meath Arms Country Inn
 
+Pages: index, rooms, bar, explore, reviews, faqs, gallery, contact.
 Live preview: meatharms.vercel.app (auto-deploys from main). Final domain: meath-arms.com.
 Static HTML/CSS site, no build step. Edit the files, push to main, Vercel deploys.
 
-Design: dark forest editorial. Deep green (#0f1512) + bone (#ece7da) + single amber accent (#d9a24a).
+Design: light editorial in the logo palette. Cream (#faf7ef) + deep green ink (#22382a) + gold accent (#96702a).
 Type: Cormorant Garamond display / Figtree body (Google Fonts).
-Buttons pill (hero CTAs rectangular), cards 16px radius, inputs 10px. Single dark theme.
+Buttons/pills 8px radius, cards 16px, inputs 10px. Footer and chat deep green.
 Logo: images/logo.png (full) and logo-nav.png (nav/footer), transparent background.
 
 ## Client
