@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Room | The Meath Arms Country Inn, Aughrim</title>
+  <meta name="description" content="Book a room at The Meath Arms Country Inn, Aughrim, Co. Wicklow. Ten en suite rooms, breakfast included.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://meath-arms.com/book">
+  <meta property="og:title" content="Book a Room | The Meath Arms Country Inn, Aughrim">
+  <meta property="og:description" content="Ten en suite rooms, breakfast included. Check-in from 2pm.">
+  <meta property="og:url" content="https://meath-arms.com/book">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://meath-arms.com/images/room-1.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo" aria-label="The Meath Arms, home">
+        <img src="/images/logo-nav.png" alt="Paddy's, The Meath Arms" class="logo-img">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/rooms.html">Rooms</a></li>
+        <li><a href="/bar.html">The Bar</a></li>
+        <li><a href="/explore.html">Explore</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/book.html" class="btn btn-primary">Book a room</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <header class="page-hero">
+    <div class="hero-media">
+      <img src="/images/room-1.jpg" srcset="/images/room-1-sm.jpg 800w, /images/room-1.jpg 1024w" sizes="100vw" alt="A deluxe room at The Meath Arms" loading="eager" fetchpriority="high">
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="container hero-inner">
+      <div class="hero-content" data-reveal>
+        <h1>Book a room.</h1>
+        <p class="lead">Tell us your dates and we'll confirm your booking by email or phone.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== BOOKING ===== -->
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info" data-reveal>
+          <h3>Your stay</h3>
+          <p>Ten en suite rooms, breakfast included.</p>
+          <div class="contact-line">
+            <span class="k">Check-in</span>
+            <span class="v">From 2:00pm</span>
+          </div>
+          <div class="contact-line">
+            <span class="k">Check-out</span>
+            <span class="v">By 10:00am</span>
+          </div>
+          <div class="contact-line">
+            <span class="k">Breakfast</span>
+            <span class="v">Included</span>
+          </div>
+          <div class="contact-line">
+            <span class="k">Pets</span>
+            <span class="v">Welcome by arrangement</span>
+          </div>
+          <div class="contact-line">
+            <span class="k">Prefer the phone?</span>
+            <span class="v"><a href="tel:+35340236460">0402 36460</a></span>
+          </div>
+          <blockquote class="mini-quote">
+            <p>Niall is a super host, just the kindest man and made me feel very much at home.</p>
+            <cite>Katherine from Australia, verified guest review</cite>
+          </blockquote>
+        </div>
+
+        <!-- TODO: booking engine to be wired in; form posts a booking request meanwhile. Swap Formspree [FORM-ID]. -->
+        <form class="form" action="https://formspree.io/f/[FORM-ID]" method="POST" data-reveal>
+          <input type="hidden" name="form-type" value="Booking request">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="b-in">Check-in date</label>
+              <input id="b-in" type="date" name="check-in" required>
+            </div>
+            <div class="form-field">
+              <label for="b-out">Check-out date</label>
+              <input id="b-out" type="date" name="check-out" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="b-room">Room type</label>
+              <select id="b-room" name="room">
+                <option>Deluxe Double Room</option>
+                <option>Deluxe Double or Twin</option>
+                <option>Deluxe Single</option>
+                <option>Twin with Garden View</option>
+                <option>Double with Mountain View</option>
+                <option>Standard Double</option>
+                <option>Standard Single</option>
+                <option>Standard Twin</option>
+                <option>Economy Single</option>
+                <option>Not sure, whatever suits</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="b-guests">Guests</label>
+              <select id="b-guests" name="guests">
+                <option>1</option>
+                <option selected>2</option>
+                <option>3</option>
+                <option>4 or more</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="b-name">Your name</label>
+              <input id="b-name" type="text" name="name" required>
+            </div>
+            <div class="form-field">
+              <label for="b-email">Your email</label>
+              <input id="b-email" type="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="b-phone">Phone</label>
+            <input id="b-phone" type="tel" name="phone">
+          </div>
+          <div class="form-field">
+            <label for="b-notes">Anything we should know? (optional)</label>
+            <textarea id="b-notes" name="notes" placeholder="Pets, arrival time, walking the Wicklow Way..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send booking request</button>
+          <p style="margin-top: 14px; font-size: 0.88rem; color: var(--muted);">We'll come back to you to confirm your room and dates. Nothing is charged online.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <div id="widgets-placeholder"></div>
+
+  <script src="/script.js"></script>
+</body>
+</html>

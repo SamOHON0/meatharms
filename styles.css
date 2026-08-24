@@ -1256,3 +1256,12 @@ footer .tagline { color: #bcc8bb; }
 @media (max-width: 540px) {
   .gallery-grid { columns: 1; }
 }
+
+
+/* ---------- Clickable cards & figures ---------- */
+a.room { color: inherit; }
+a.room:hover { color: inherit; }
+.trio a { display: block; border-radius: var(--r-card); }
+.trio a figure, .split-media a { display: block; }
+.trio a:hover img, .split-media a:hover img { transform: scale(1.03); }
+.trio img, .split-media .frame img { transition: transform 0.5s ease; }

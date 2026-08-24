@@ -14,9 +14,6 @@ const footerHTML = `
           <a href="https://www.instagram.com/paddysbar_aughrim/" target="_blank" rel="noopener" aria-label="Instagram">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           </a>
-          <a href="https://www.booking.com/hotel/ie/meath-arms-country-inn.html" target="_blank" rel="noopener" aria-label="Booking.com">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          </a>
         </div>
       </div>
       <div>
@@ -46,7 +43,7 @@ const footerHTML = `
         <ul>
           <li><a href="tel:+35340236460">0402 36460</a></li>
           <li><a href="mailto:themeatharms@outlook.com">themeatharms@outlook.com</a></li>
-          <li><a href="https://www.booking.com/hotel/ie/meath-arms-country-inn.html" target="_blank" rel="noopener">Book on Booking.com</a></li>
+          <li><a href="/book.html">Book a room</a></li>
         </ul>
       </div>
     </div>
@@ -177,7 +174,7 @@ if (chatClose) chatClose.addEventListener('click', () => chatWin.classList.remov
 const KB = [
   {
     keys: ['book', 'reserv', 'room', 'stay', 'night', 'accommodation', 'bed', 'sleep'],
-    reply: "We've ten en suite rooms upstairs. The easiest way to book is through Booking.com (there's a Book a Room button at the top of the page), or ring us directly on 0402 36460."
+    reply: "We've ten en suite rooms upstairs. The easiest way to book is the Book a Room button at the top of the page, or ring us directly on 0402 36460."
   },
   {
     keys: ['hour', 'open', 'close', 'when', 'time', 'today'],
@@ -217,7 +214,7 @@ const KB = [
   },
   {
     keys: ['price', 'cost', 'rate', 'how much', 'expensive'],
-    reply: "Room rates vary by date and room type. You'll see live prices on Booking.com, or ring us on 0402 36460 for the best direct rate."
+    reply: "Room rates vary by date and room type. Send a booking request through the website with your dates, or ring us on 0402 36460 and we'll give you the rate."
   }
 ];
 
