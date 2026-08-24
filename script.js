@@ -48,7 +48,7 @@ const footerHTML = `
     </div>
     <div class="footer-bottom">
       <div>© <span id="year"></span> The Meath Arms Country Inn. All rights reserved.</div>
-      <div>Website by <a href="https://squaretwo.ie" target="_blank" rel="noopener">Square Two</a></div>
+      <div>Website by <a href="https://squaretwo.ie" target="_blank" rel="noopener">SquareTwo</a></div>
     </div>
   </div>
 </footer>

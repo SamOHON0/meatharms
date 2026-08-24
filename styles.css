@@ -873,3 +873,27 @@ footer ul li a:hover { color: var(--accent); }
   font-size: 0.88rem;
   color: var(--muted);
 }
+
+/* ---------- Scroll cue ---------- */
+.scroll-cue {
+  position: absolute;
+  bottom: 26px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 44px; height: 44px;
+  border-radius: 999px;
+  border: 1.5px solid rgba(236, 231, 218, 0.55);
+  color: var(--text);
+}
+.scroll-cue:hover { color: var(--accent); border-color: var(--accent); }
+.scroll-cue svg { width: 18px; height: 18px; animation: cueBob 2.2s ease-in-out infinite; }
+@keyframes cueBob {
+  0%, 100% { transform: translateY(-2px); }
+  50% { transform: translateY(4px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-cue svg { animation: none; }
+}
