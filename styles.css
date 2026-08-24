@@ -6,17 +6,17 @@
    ============================================================ */
 
 :root {
-  --bg: #0f1512;
-  --bg-2: #141c17;
-  --panel: #1a241e;
-  --line: rgba(236, 231, 218, 0.14);
-  --line-soft: rgba(236, 231, 218, 0.08);
+  --bg: #182219;
+  --bg-2: #1e2a21;
+  --panel: #27352b;
+  --line: rgba(236, 231, 218, 0.18);
+  --line-soft: rgba(236, 231, 218, 0.11);
   --text: #ece7da;
-  --muted: #a9b2a4;
+  --muted: #b6bfb0;
   --accent: #d9a24a;
   --accent-deep: #b98330;
   --accent-soft: rgba(217, 162, 74, 0.13);
-  --scrim: rgba(10, 15, 12, 0.55);
+  --scrim: rgba(15, 21, 16, 0.45);
   --shadow: 0 16px 44px rgba(0, 0, 0, 0.35);
   --r-card: 16px;
   --r-input: 10px;
@@ -84,7 +84,7 @@ p.lead { font-size: 1.14rem; color: var(--muted); }
 .btn-primary { background: var(--accent); color: #171208; }
 .btn-primary:hover { background: #e5b563; color: #171208; }
 .btn-ghost {
-  background: rgba(15, 21, 18, 0.25);
+  background: rgba(24, 34, 25, 0.25);
   color: var(--text);
   border: 1.5px solid rgba(236, 231, 218, 0.55);
 }
@@ -99,7 +99,7 @@ p.lead { font-size: 1.14rem; color: var(--muted); }
   transition: background 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
 }
 .nav.scrolled {
-  background: rgba(15, 21, 18, 0.88);
+  background: rgba(24, 34, 25, 0.9);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 1px 0 var(--line-soft);
@@ -195,8 +195,8 @@ p.lead { font-size: 1.14rem; color: var(--muted); }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(10, 15, 12, 0.82) 0%, rgba(10, 15, 12, 0.45) 48%, rgba(10, 15, 12, 0.12) 100%),
-    linear-gradient(0deg, rgba(15, 21, 18, 0.96) 0%, rgba(15, 21, 18, 0.25) 34%, rgba(10, 15, 12, 0.3) 100%);
+    linear-gradient(90deg, rgba(15, 21, 16, 0.72) 0%, rgba(10, 15, 12, 0.45) 48%, rgba(10, 15, 12, 0.12) 100%),
+    linear-gradient(0deg, rgba(24, 34, 25, 0.92) 0%, rgba(24, 34, 25, 0.25) 34%, rgba(10, 15, 12, 0.3) 100%);
 }
 .hero-inner { position: relative; z-index: 2; width: 100%; }
 .hero-content { max-width: 660px; }
@@ -338,7 +338,7 @@ section { padding: 110px 0; }
 .band-media img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
 .band-scrim {
   position: absolute; inset: 0;
-  background: linear-gradient(90deg, rgba(10, 15, 12, 0.9) 0%, rgba(10, 15, 12, 0.72) 46%, rgba(10, 15, 12, 0.3) 100%);
+  background: linear-gradient(90deg, rgba(15, 21, 16, 0.82) 0%, rgba(10, 15, 12, 0.72) 46%, rgba(10, 15, 12, 0.3) 100%);
 }
 .band .container { position: relative; z-index: 2; }
 .band-panel { max-width: 520px; }
@@ -562,7 +562,7 @@ section { padding: 110px 0; }
 
 /* ---------- Footer ---------- */
 footer {
-  background: #0b100d;
+  background: #141d16;
   border-top: 1px solid var(--line-soft);
   color: var(--muted);
   padding: 76px 0 32px;
@@ -656,7 +656,7 @@ footer ul li a:hover { color: var(--accent); }
 }
 .chat-window.active { display: flex; }
 .chat-header {
-  background: #0b100d;
+  background: #141d16;
   padding: 16px 18px;
   display: flex;
   justify-content: space-between;
@@ -685,7 +685,7 @@ footer ul li a:hover { color: var(--accent); }
   padding: 4px 8px;
   border-radius: 8px;
 }
-.chat-close:hover { background: rgba(236, 231, 218, 0.08); }
+.chat-close:hover { background: rgba(236, 231, 218, 0.11); }
 .chat-body { flex: 1; padding: 18px; overflow-y: auto; max-height: 340px; }
 .msg {
   margin-bottom: 12px;
@@ -808,7 +808,7 @@ footer ul li a:hover { color: var(--accent); }
 
   .band { padding: 100px 0; }
   .band-scrim {
-    background: linear-gradient(0deg, rgba(10, 15, 12, 0.92) 0%, rgba(10, 15, 12, 0.62) 100%);
+    background: linear-gradient(0deg, rgba(15, 21, 16, 0.84) 0%, rgba(10, 15, 12, 0.62) 100%);
   }
 
   .room.wide, .room.slim { grid-column: span 6; }
@@ -848,8 +848,8 @@ footer ul li a:hover { color: var(--accent); }
 .hero.centered .hero-ctas { justify-content: center; }
 .hero.centered .hero-scrim {
   background:
-    radial-gradient(ellipse 70% 60% at 50% 55%, rgba(10, 15, 12, 0.55), rgba(10, 15, 12, 0.28)),
-    linear-gradient(0deg, rgba(15, 21, 18, 0.96) 0%, rgba(15, 21, 18, 0.15) 30%, rgba(10, 15, 12, 0.35) 100%);
+    radial-gradient(ellipse 70% 60% at 50% 55%, rgba(15, 21, 16, 0.45), rgba(10, 15, 12, 0.28)),
+    linear-gradient(0deg, rgba(24, 34, 25, 0.92) 0%, rgba(15, 21, 18, 0.15) 30%, rgba(10, 15, 12, 0.35) 100%);
 }
 .btn-rect { border-radius: 6px; }
 
