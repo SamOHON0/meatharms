@@ -1101,16 +1101,13 @@ footer .tagline { color: #bcc8bb; }
 .hero-full .hf-media img {
   width: 100%; height: 100%;
   object-fit: cover;
-  object-position: center 45%;
+  object-position: 80% 45%;
 }
 .hero-full .hf-media::after {
   content: '';
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(0deg, #faf7ef 0%, rgba(250, 247, 239, 0) 26%),
-    linear-gradient(90deg, rgba(18, 26, 20, 0.62) 0%, rgba(18, 26, 20, 0.3) 42%, rgba(18, 26, 20, 0.05) 70%),
-    linear-gradient(180deg, rgba(18, 26, 20, 0.35) 0%, rgba(18, 26, 20, 0) 26%);
+  background: linear-gradient(90deg, rgba(18, 26, 20, 0.55) 0%, rgba(18, 26, 20, 0.28) 42%, rgba(18, 26, 20, 0.02) 68%);
 }
 .hero-full .hf-text h1 { color: #f6f2e7; }
 .hero-full .hf-text .lead { color: rgba(246, 242, 231, 0.94); }
