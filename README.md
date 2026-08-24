@@ -9,14 +9,10 @@ Main Street, Aughrim, Co. Wicklow. Est. 1728, Phelan family. Ten en suite rooms.
 Bar: Mon-Fri 2pm-11:30pm, Sat-Sun 12pm-12:30am. Live music weekends.
 Restaurant closed at the minute — no food on the site.
 
-## Images needed (drop into /images/)
-- hero.jpg        — best wide shot: bar interior or exterior at dusk
-- exterior.jpg    — front of the inn on Main Street
-- bar-1.jpg, bar-2.jpg, bar-3.jpg — bar interiors (Niall's email attachments)
-- room-1.jpg .. room-6.jpg — one per room card (Booking.com pulls): deluxe, garden view, mountain view, standard, twin, economy
-- aughrim.jpg     — village shot
-- carousel-01.jpg .. carousel-06.jpg — bar page gallery (can reuse the above)
-- sign.jpg        — photo of the "Paddy's" sign (logo reference only, not on site)
+## Images
+All real photos in place (24 Aug): Niall's interiors (hero, bar-1..3, carousel-01..04) plus Booking.com pulls (exterior, room-1..6, breakfast-1..3, garden, aughrim).
+Room mapping: room-1 deluxe (king sleigh bed), room-2 deluxe garden view, room-3 mountain view (sash window to hills, also used for the Explore Aughrim card), room-4 standard, room-5 twin, room-6 economy.
+Sign photos are logo reference only. Raw source jpgs in the repo root are gitignored (/*.jpg) — tidy them into /source-photos when handy.
 
 ## TODOs before launch
 - [ ] Swap Formspree [FORM-ID] in contact.html
