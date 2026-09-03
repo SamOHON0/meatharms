@@ -1265,3 +1265,15 @@ a.room:hover { color: inherit; }
 .trio a figure, .split-media a { display: block; }
 .trio a:hover img, .split-media a:hover img { transform: scale(1.03); }
 .trio img, .split-media .frame img { transition: transform 0.5s ease; }
+
+/* ---------- Booking page ---------- */
+.booking-panel { display: flex; flex-direction: column; gap: 22px; }
+.ftb-placeholder {
+  background: var(--bg-2);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r-card);
+  padding: 22px 26px;
+}
+.ftb-note { color: var(--muted); font-size: 0.97rem; margin: 0; }
+.form-title { font-size: 1.35rem; margin-bottom: 20px; }
+.form-note { margin-top: 14px; font-size: 0.88rem; color: var(--muted); }

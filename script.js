@@ -5,7 +5,7 @@ const footerHTML = `
     <div class="footer-grid">
       <div>
         <img src="/images/logo-nav.png" alt="Paddy's, The Meath Arms" class="footer-logo">
-        <p class="tagline">A family-run country inn and village bar on Main Street, Aughrim, Co. Wicklow. Ten en suite rooms, a proper pint and a warm Wicklow welcome.</p>
+        <p class="tagline">A family-run country inn and village bar on Main Street, Aughrim, Co. Wicklow. Twelve en suite rooms, a proper pint and a warm Wicklow welcome.</p>
         <div class="socials">
           <!-- TODO: confirm Facebook URL with Niall (he typed "TheMesthArms") -->
           <a href="https://www.facebook.com/TheMeathArms/" target="_blank" rel="noopener" aria-label="Facebook">
@@ -174,7 +174,7 @@ if (chatClose) chatClose.addEventListener('click', () => chatWin.classList.remov
 const KB = [
   {
     keys: ['book', 'reserv', 'room', 'stay', 'night', 'accommodation', 'bed', 'sleep'],
-    reply: "We've ten en suite rooms upstairs. The easiest way to book is the Book a Room button at the top of the page, or ring us directly on 0402 36460."
+    reply: "We've twelve en suite rooms upstairs. The easiest way to book is the Book a Room button at the top of the page, or ring us directly on 0402 36460."
   },
   {
     keys: ['hour', 'open', 'close', 'when', 'time', 'today'],

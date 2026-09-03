@@ -1,6 +1,6 @@
 # The Meath Arms Country Inn
 
-Pages: index, rooms, bar, explore, reviews, faqs, gallery, contact.
+Pages: index, rooms, bar, explore, reviews, faqs, gallery, book, contact.
 Live preview: meatharms.vercel.app (auto-deploys from main). Final domain: meath-arms.com.
 Static HTML/CSS site, no build step. Edit the files, push to main, Vercel deploys.
 
@@ -11,11 +11,11 @@ Logo: images/logo.png (full) and logo-nav.png (nav/footer), transparent backgrou
 
 ## Client
 Niall Phelan - nphelan74@gmail.com - 0402 36460 - themeatharms@outlook.com
-Main Street, Aughrim, Co. Wicklow. Est. 1728, Phelan family. Ten en suite rooms.
+Main Street, Aughrim, Co. Wicklow. Est. 1728, Phelan family. TWELVE en suite rooms across 9 room types (Niall corrected this 25 Aug, was previously wrong as ten).
 Bar: Mon-Fri 2pm-11:30pm, Sat-Sun 12pm-12:30am. Live music weekends.
 Restaurant closed at the minute, so no food on the site.
 Socials: facebook.com/TheMeathArms (verify spelling with Niall), instagram.com/paddysbar_aughrim.
-Bookings go to their Booking.com listing (meath-arms-country-inn).
+Bookings: freetobook chosen 3 Sep. See BOOKING-SETUP.md. /book.html has the widget slot ready; request form live meanwhile. No Booking.com references anywhere on the site.
 
 ## Images
 All real photos: Niall's interiors (hero, bar-1..3, carousel-01..04) plus Booking.com pulls.
@@ -31,3 +31,9 @@ The exterior photo (hero) is only 730px wide, from Booking.com. Ask Niall for a 
 - [ ] Ask Niall for a mobile if he wants WhatsApp (landline won't work on wa.me)
 - [ ] Confirm who controls the meath-arms.com domain (an old site is live on it), then point it at Vercel
 - [ ] Paddy's bar logo is a separate later job when Niall relaunches the bar
+
+## Client feedback so far (email)
+25 Aug, first draft: likes the layout and navigation, "it's what I had in mind". Two asks:
+better photos generally, and the room count is TWELVE not ten.
+2 Sep: promised more photos, and says he has "a few other things to point out" but wants to
+see the second draft first. Chase the photos.

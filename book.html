@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book a Room | The Meath Arms Country Inn, Aughrim</title>
-  <meta name="description" content="Book a room at The Meath Arms Country Inn, Aughrim, Co. Wicklow. Ten en suite rooms, breakfast included.">
+  <meta name="description" content="Book a room at The Meath Arms Country Inn, Aughrim, Co. Wicklow. Twelve en suite rooms, breakfast included.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://meath-arms.com/book">
   <meta property="og:title" content="Book a Room | The Meath Arms Country Inn, Aughrim">
-  <meta property="og:description" content="Ten en suite rooms, breakfast included. Check-in from 2pm.">
+  <meta property="og:description" content="Twelve en suite rooms, breakfast included. Check-in from 2pm.">
   <meta property="og:url" content="https://meath-arms.com/book">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://meath-arms.com/images/room-1.jpg">
@@ -60,7 +60,7 @@
       <div class="contact-grid">
         <div class="contact-info" data-reveal>
           <h3>Your stay</h3>
-          <p>Ten en suite rooms, breakfast included.</p>
+          <p>Twelve en suite rooms, breakfast included.</p>
           <div class="contact-line">
             <span class="k">Check-in</span>
             <span class="v">From 2:00pm</span>
@@ -87,66 +87,84 @@
           </blockquote>
         </div>
 
-        <!-- TODO: booking engine to be wired in; form posts a booking request meanwhile. Swap Formspree [FORM-ID]. -->
-        <form class="form" action="https://formspree.io/f/[FORM-ID]" method="POST" data-reveal>
-          <input type="hidden" name="form-type" value="Booking request">
-          <div class="form-row">
-            <div class="form-field">
-              <label for="b-in">Check-in date</label>
-              <input id="b-in" type="date" name="check-in" required>
-            </div>
-            <div class="form-field">
-              <label for="b-out">Check-out date</label>
-              <input id="b-out" type="date" name="check-out" required>
-            </div>
+        <div class="booking-panel" data-reveal>
+
+          <!-- =====================================================================
+               FREETOBOOK BOOKING WIDGET SLOT
+               Paste the widget snippet from the freetobook dashboard between the
+               markers below, then delete the .ftb-placeholder div.
+               Dashboard path: DIRECT BOOKINGS > BOOKING BUTTONS > SETTINGS
+               IMPORTANT: set the booking page to open in a NEW WINDOW, not in frame.
+               ===================================================================== -->
+          <!-- FREETOBOOK WIDGET START -->
+          <div class="ftb-placeholder">
+            <p class="ftb-note">Online availability is being set up. Send your dates below and we'll confirm by email or phone, usually the same day.</p>
           </div>
-          <div class="form-row">
-            <div class="form-field">
-              <label for="b-room">Room type</label>
-              <select id="b-room" name="room">
-                <option>Deluxe Double Room</option>
-                <option>Deluxe Double or Twin</option>
-                <option>Deluxe Single</option>
-                <option>Twin with Garden View</option>
-                <option>Double with Mountain View</option>
-                <option>Standard Double</option>
-                <option>Standard Single</option>
-                <option>Standard Twin</option>
-                <option>Economy Single</option>
-                <option>Not sure, whatever suits</option>
-              </select>
+          <!-- FREETOBOOK WIDGET END -->
+
+          <!-- Request form. Stays after the widget goes in, as the fallback for
+               guests who would rather ask than book online. -->
+          <form class="form" action="https://formspree.io/f/[FORM-ID]" method="POST">
+            <input type="hidden" name="form-type" value="Booking request">
+            <h3 class="form-title">Send your dates</h3>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="b-in">Check-in date</label>
+                <input id="b-in" type="date" name="check-in" required>
+              </div>
+              <div class="form-field">
+                <label for="b-out">Check-out date</label>
+                <input id="b-out" type="date" name="check-out" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="b-room">Room type</label>
+                <select id="b-room" name="room">
+                  <option>Deluxe Double Room</option>
+                  <option>Deluxe Double or Twin</option>
+                  <option>Deluxe Single</option>
+                  <option>Twin with Garden View</option>
+                  <option>Double with Mountain View</option>
+                  <option>Standard Double</option>
+                  <option>Standard Single</option>
+                  <option>Standard Twin</option>
+                  <option>Economy Single</option>
+                  <option selected>Not sure, whatever suits</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="b-guests">Guests</label>
+                <select id="b-guests" name="guests">
+                  <option>1</option>
+                  <option selected>2</option>
+                  <option>3</option>
+                  <option>4 or more</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="b-name">Your name</label>
+                <input id="b-name" type="text" name="name" required>
+              </div>
+              <div class="form-field">
+                <label for="b-email">Your email</label>
+                <input id="b-email" type="email" name="email" required>
+              </div>
             </div>
             <div class="form-field">
-              <label for="b-guests">Guests</label>
-              <select id="b-guests" name="guests">
-                <option>1</option>
-                <option selected>2</option>
-                <option>3</option>
-                <option>4 or more</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-field">
-              <label for="b-name">Your name</label>
-              <input id="b-name" type="text" name="name" required>
+              <label for="b-phone">Phone</label>
+              <input id="b-phone" type="tel" name="phone">
             </div>
             <div class="form-field">
-              <label for="b-email">Your email</label>
-              <input id="b-email" type="email" name="email" required>
+              <label for="b-notes">Anything we should know? (optional)</label>
+              <textarea id="b-notes" name="notes" placeholder="Pets, arrival time, walking the Wicklow Way..."></textarea>
             </div>
-          </div>
-          <div class="form-field">
-            <label for="b-phone">Phone</label>
-            <input id="b-phone" type="tel" name="phone">
-          </div>
-          <div class="form-field">
-            <label for="b-notes">Anything we should know? (optional)</label>
-            <textarea id="b-notes" name="notes" placeholder="Pets, arrival time, walking the Wicklow Way..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send booking request</button>
-          <p style="margin-top: 14px; font-size: 0.88rem; color: var(--muted);">We'll come back to you to confirm your room and dates. Nothing is charged online.</p>
-        </form>
+            <button type="submit" class="btn btn-primary">Send booking request</button>
+            <p class="form-note">We'll come back to you to confirm your room and dates.</p>
+          </form>
+        </div>
       </div>
     </div>
   </section>
