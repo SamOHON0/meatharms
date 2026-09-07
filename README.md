@@ -12,7 +12,11 @@ Logo: images/logo.png (full) and logo-nav.png (nav/footer), transparent backgrou
 ## Client
 Niall Phelan - nphelan74@gmail.com - 0402 36460 - themeatharms@outlook.com
 Main Street, Aughrim, Co. Wicklow. Est. 1728, Phelan family. TWELVE en suite rooms across 9 room types (Niall corrected this 25 Aug, was previously wrong as ten).
-Bar: Mon-Fri 2pm-11:30pm, Sat-Sun 12pm-12:30am. Live music weekends.
+Bar hours (REVISED by Niall 5 Sep, now live on site):
+  Mon-Thu 2pm-11:30pm | Fri 2pm-12:30am | Sat 12pm-12:30am | Sun 12pm-11pm
+  NOTE: Niall wrote Fri/Sat close as "12:30pm". Read as 12:30am (half twelve at night),
+  since 2pm-12:30pm is impossible. Worth a one-line confirm.
+  Live music at weekends.
 Restaurant closed at the minute, so no food on the site.
 Socials: facebook.com/TheMeathArms (verify spelling with Niall), instagram.com/paddysbar_aughrim.
 Bookings: freetobook chosen 3 Sep. See BOOKING-SETUP.md. /book.html has the widget slot ready; request form live meanwhile. No Booking.com references anywhere on the site.
@@ -27,7 +31,12 @@ The exterior photo (hero) is only 730px wide, from Booking.com. Ask Niall for a 
 ## TODOs before launch
 - [ ] Swap Formspree [FORM-ID] in contact.html (create form at formspree.io, point it at themeatharms@outlook.com)
 - [ ] Confirm Facebook URL: Niall typed "TheMesthArms", site uses /TheMeathArms/
-- [ ] Confirm breakfast still runs for guests while the restaurant is closed (rooms page says it does)
+- [ ] **BREAKFAST CLAIM UNVERIFIED AND POSSIBLY WRONG.** Site says "breakfast included" flatly
+      (homepage, rooms page section, room cards, FAQ, book page). But the HubSpot build task
+      (pulled from the Booking.com listing) prices Deluxe Double at EUR 140, or EUR 160 WITH
+      breakfast, i.e. breakfast is a paid extra on at least some rates. Deluxe Single and Twin
+      Garden View were listed as breakfast included. This is a commercial promise a guest could
+      rely on. Confirm with Niall before launch and adjust the copy.
 - [ ] Ask Niall for a mobile if he wants WhatsApp (landline won't work on wa.me)
 - [ ] Confirm who controls the meath-arms.com domain (an old site is live on it), then point it at Vercel
 - [ ] Paddy's bar logo is a separate later job when Niall relaunches the bar
@@ -36,4 +45,7 @@ The exterior photo (hero) is only 730px wide, from Booking.com. Ask Niall for a 
 25 Aug, first draft: likes the layout and navigation, "it's what I had in mind". Two asks:
 better photos generally, and the room count is TWELVE not ten.
 2 Sep: promised more photos, and says he has "a few other things to point out" but wants to
-see the second draft first. Chase the photos.
+see the second draft first.
+5 Sep: sent revised bar hours (applied). NO photos attached despite the HubSpot task saying
+"new photos sent" - that email carried hours only. Photos still outstanding.
+Second draft has not been sent yet. Sending it should unlock his remaining feedback.

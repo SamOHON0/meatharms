@@ -178,7 +178,7 @@ const KB = [
   },
   {
     keys: ['hour', 'open', 'close', 'when', 'time', 'today'],
-    reply: "The bar is open 2pm to 11:30pm Monday to Friday, and 12pm to 12:30am on Saturdays and Sundays."
+    reply: "The bar is open 2pm to 11:30pm Monday to Thursday, 2pm to 12:30am on Friday, 12pm to 12:30am on Saturday and 12pm to 11pm on Sunday."
   },
   {
     keys: ['music', 'band', 'session', 'entertainment', 'gig', 'trad'],
