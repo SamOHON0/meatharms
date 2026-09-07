@@ -1,6 +1,6 @@
 # The Meath Arms Country Inn
 
-Pages: index, rooms, bar, explore, reviews, faqs, gallery, book, contact.
+Pages: index, rooms, bar, explore, reviews, faqs, gallery, book, contact (+ 404.html, served by Vercel for unknown paths).
 Live preview: meatharms.vercel.app (auto-deploys from main). Final domain: meath-arms.com.
 Static HTML/CSS site, no build step. Edit the files, push to main, Vercel deploys.
 
@@ -48,4 +48,4 @@ better photos generally, and the room count is TWELVE not ten.
 see the second draft first.
 5 Sep: sent revised bar hours (applied). NO photos attached despite the HubSpot task saying
 "new photos sent" - that email carried hours only. Photos still outstanding.
-Second draft has not been sent yet. Sending it should unlock his remaining feedback.
+7 Sep: Niall emailed four breakfast photos (now breakfast-2..5). Second draft polished 7 Sep (no repeated photos across a page, alt text everywhere, 404 page, theme-color). Not yet sent.

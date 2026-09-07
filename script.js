@@ -5,7 +5,7 @@ const footerHTML = `
     <div class="footer-grid">
       <div>
         <img src="/images/logo-nav.png" alt="Paddy's, The Meath Arms" class="footer-logo">
-        <p class="tagline">A family-run country inn and village bar on Main Street, Aughrim, Co. Wicklow. Twelve en suite rooms, a proper pint and a warm Wicklow welcome.</p>
+        <p class="tagline">A family-run country inn and village bar on Main Street, Aughrim, Co. Wicklow. Twelve en suite rooms upstairs and live music in the bar at the weekends.</p>
         <div class="socials">
           <!-- TODO: confirm Facebook URL with Niall (he typed "TheMesthArms") -->
           <a href="https://www.facebook.com/TheMeathArms/" target="_blank" rel="noopener" aria-label="Facebook">
@@ -202,7 +202,7 @@ const KB = [
   },
   {
     keys: ['park', 'parking', 'car'],
-    reply: "There's free parking at the inn and easy parking on the street in Aughrim."
+    reply: "There's free parking on the street around the inn. We don't have a car park of our own."
   },
   {
     keys: ['pet', 'dog'],
