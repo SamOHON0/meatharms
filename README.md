@@ -23,7 +23,9 @@ Bookings: freetobook chosen 3 Sep. See BOOKING-SETUP.md. /book.html has the widg
 
 ## Images
 All real photos: Niall's interiors (hero, bar-1..3, carousel-01..04) plus Booking.com pulls.
-Room types: room-1 Deluxe Double, room-2 Deluxe Double or Twin, room-3 Double Mountain View (also the Explore Aughrim card), room-4 Standard Double, room-5 Twin Garden View, room-6 Standard Single, room-8 Economy Single, room-9 Standard Twin. room-7 (Deluxe Single) is unused, Niall dropped that room type.
+Niall's own room photos (WhatsApp 7 Sep, via Jack): deluxe-1..8 are all DELUXE DOUBLE rooms per Niall's caption (several different deluxe rooms), economy-1/2 are the Economy Single. Standard Twin photos (grey twins) were in the chat but not saved to the folder yet. Raw WhatsApp files in images/ are gitignored, delete them locally.
+Old Booking.com photos still in use: room-3 Mountain View (also aughrim.jpg), room-5 Twin Garden View (old, Niall says replace), room-6 Standard Single, room-9 Standard Twin. Standard Double card now uses deluxe-5 as a stand-in.
+Legacy mapping: room-1 Deluxe Double, room-2 Deluxe Double or Twin, room-3 Double Mountain View (also the Explore Aughrim card), room-4 Standard Double, room-5 Twin Garden View, room-6 Standard Single, room-8 Economy Single, room-9 Standard Twin. room-7 (Deluxe Single) is unused, Niall dropped that room type.
 Niall 4 Sep: Twin Garden View photo is "very old", Economy has no real photo ("tiny room"), Standard Single and Standard Double photos also being replaced. He is sending new room photos with labels. Swap room-4/5/6/8 when they land.
 Real Booking.com review quotes on home (Katherine/AU), rooms (Karen/UK, Kate/IE) and bar (guest/IE). Rating 8.4 from 337 reviews, staff 9.3, cleanliness 8.9 (checked 24 Aug 2026).
 Raw source jpgs in the repo root are gitignored (/*.jpg). Tidy them into /source-photos when handy.
