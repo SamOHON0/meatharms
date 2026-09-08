@@ -47,14 +47,14 @@ booking page to open in a NEW WINDOW, not in frame.
 6. Delete the `.ftb-placeholder` div.
 7. Leave the request form underneath. It stays as the fallback for guests who would rather ask.
 
-The room types in the request form dropdown match the nine types on the Booking.com listing,
+The room types in the request form dropdown match the eight room types on the site (Deluxe Single dropped by Niall 4 Sep),
 so they should be set up the same way in freetobook for consistency.
 
 ## Room set-up in freetobook
 
-12 physical en suite rooms across 9 types (confirmed by Niall 25 Aug):
+12 physical en suite rooms across 8 types (12 confirmed by Niall 25 Aug, Deluxe Single dropped 4 Sep):
 
-Deluxe Double Room, Deluxe Double or Twin, Deluxe Single, Twin with Garden View,
+Deluxe Double Room, Deluxe Double or Twin, Twin with Garden View,
 Double with Mountain View, Standard Double, Standard Single, Standard Twin, Economy Single.
 
 Check-in from 2pm, check-out by 10am. Breakfast included. Pets by arrangement.
