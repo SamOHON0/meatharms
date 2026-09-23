@@ -34,15 +34,19 @@ The exterior photo (hero) is only 730px wide, from Booking.com. Ask Niall for a 
 ## TODOs before launch
 - [ ] Swap Formspree [FORM-ID] in contact.html (create form at formspree.io, point it at themeatharms@outlook.com)
 - [ ] Confirm Facebook URL: Niall typed "TheMesthArms", site uses /TheMeathArms/
-- [ ] **BREAKFAST CLAIM UNVERIFIED AND POSSIBLY WRONG.** Site says "breakfast included" flatly
-      (homepage, rooms page section, room cards, FAQ, book page). But the HubSpot build task
-      (pulled from the Booking.com listing) prices Deluxe Double at EUR 140, or EUR 160 WITH
-      breakfast, i.e. breakfast is a paid extra on at least some rates. Deluxe Single and Twin
-      Garden View were listed as breakfast included. This is a commercial promise a guest could
-      rely on. Confirm with Niall before launch and adjust the copy.
+- [x] Breakfast: RESOLVED at 15 Sep meeting. Breakfast is OPTIONAL (room-only rates exist) and there is no full Irish. All "breakfast included" copy changed to "with or without breakfast", full Irish photo and copy removed, breakfast photos off rooms/gallery/FAQ hero. Still to confirm what breakfast actually is now (continental?) before writing any detail about it.
+- [ ] Confirm with Niall: name of the Italian restaurant and the two takeaways (Explore "Eating out" card, FAQ restaurant answer), and the "Jim's Way" walk name.
 - [ ] Ask Niall for a mobile if he wants WhatsApp (landline won't work on wa.me)
 - [ ] Confirm who controls the meath-arms.com domain (an old site is live on it), then point it at Vercel
 - [ ] Paddy's bar logo is a separate later job when Niall relaunches the bar
+
+## Meeting 15 Sep 2026 (notes from Sam)
+Applied (clear items): dropped "eight room types" count, breakfast optional everywhere, no full Irish, no Wi-Fi mentions anywhere,
+no taxi/luggage transfer promises anywhere (Wicklow Way proximity kept), "super host" quote off home and book pages, homepage now
+rotates three reviews (Karen, Klimska, Ireland/Guinness), Tidiest Town 2007 added, golf card now Macreddin (4 min) + Woodenbridge + Arklow Golf Links,
+Explore "Eating out" card (Strawberry Tree, Italian, two takeaways), FAQ restaurant answer points to those. Pet charge: Niall is thinking about it, HOLD.
+NOT yet applied (needs a confirm): merge the two deluxe cards into one (name TBC, likely "Deluxe Double or Twin"), swap Standard Twin / Twin Garden View
+photos, Standard Double still needs a real photo. "Block Fri and Sat next 4 weekends" is an availability instruction, not a site change.
 
 ## Client feedback so far (email)
 25 Aug, first draft: likes the layout and navigation, "it's what I had in mind". Two asks:

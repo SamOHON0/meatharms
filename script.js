@@ -153,6 +153,24 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
 document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
 
+// Homepage review rotator: three reviews, one showing at a time
+const rotator = document.getElementById('quoteRotator');
+if (rotator) {
+  const slides = Array.from(rotator.querySelectorAll('.quote-slide'));
+  let current = 0;
+  let timer = null;
+  const show = (n) => {
+    slides[current].classList.remove('is-active');
+    current = (n + slides.length) % slides.length;
+    slides[current].classList.add('is-active');
+  };
+  const start = () => { if (!timer) timer = setInterval(() => show(current + 1), 7000); };
+  const stop = () => { clearInterval(timer); timer = null; };
+  rotator.addEventListener('mouseenter', stop);
+  rotator.addEventListener('mouseleave', start);
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) start();
+}
+
 // Chatbot
 const chatBtn = document.getElementById('chatBtn');
 const chatWin = document.getElementById('chatWin');
@@ -190,7 +208,7 @@ const KB = [
   },
   {
     keys: ['breakfast'],
-    reply: "Breakfast is sorted for guests staying with us. Give us a ring on 0402 36460 if you have any questions about your stay."
+    reply: "You can book a room with or without breakfast. Give us a ring on 0402 36460 if you have any questions about your stay."
   },
   {
     keys: ['check-in', 'check in', 'checkin', 'checkout', 'check-out', 'check out', 'arrive'],
@@ -210,7 +228,7 @@ const KB = [
   },
   {
     keys: ['walk', 'hike', 'golf', 'fish', 'wicklow way', 'do', 'activity', 'around'],
-    reply: "Aughrim is a great base for hill walking, golf and fishing, with the Wicklow Mountains on the doorstep. We can help arrange taxis and luggage transfers for walkers too."
+    reply: "Aughrim is a great base for hill walking, golf and fishing, with the Wicklow Mountains on the doorstep and the Wicklow Way within reach."
   },
   {
     keys: ['price', 'cost', 'rate', 'how much', 'expensive'],

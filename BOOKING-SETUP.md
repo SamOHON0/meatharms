@@ -57,7 +57,7 @@ so they should be set up the same way in freetobook for consistency.
 Deluxe Double Room, Deluxe Double or Twin, Twin with Garden View,
 Double with Mountain View, Standard Double, Standard Single, Standard Twin, Economy Single.
 
-Check-in from 2pm, check-out by 10am. Breakfast included. Pets by arrangement.
+Check-in from 2pm, check-out by 10am. Breakfast is OPTIONAL: set up room-only and with-breakfast rates (Niall, meeting 15 Sep 2026). Pets by arrangement, a pet charge is being considered but on hold.
 
 ## Still needed from Niall
 
