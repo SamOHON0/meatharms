@@ -37,7 +37,7 @@ The exterior photo (hero) is only 730px wide, from Booking.com. Ask Niall for a 
 - [x] Breakfast: RESOLVED at 15 Sep meeting. Breakfast is OPTIONAL (room-only rates exist) and there is no full Irish. All "breakfast included" copy changed to "with or without breakfast", full Irish photo and copy removed, breakfast photos off rooms/gallery/FAQ hero. Still to confirm what breakfast actually is now (continental?) before writing any detail about it.
 - [ ] Confirm with Niall: name of the Italian restaurant and the two takeaways (Explore "Eating out" card, FAQ restaurant answer), and the "Jim's Way" walk name.
 - [ ] Ask Niall for a mobile if he wants WhatsApp (landline won't work on wa.me)
-- [ ] Confirm who controls the meath-arms.com domain (an old site is live on it), then point it at Vercel
+- [ ] Confirm who controls meath-arms.com before using it: on 22 Oct 2026 it 301-redirected to an escort site, so all canonical/og/sitemap URLs were moved to meatharms.vercel.app until Niall proves ownership
 - [ ] Paddy's bar logo is a separate later job when Niall relaunches the bar
 
 ## Meeting 15 Sep 2026 (notes from Sam)

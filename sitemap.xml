@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://meath-arms.com/</loc></url>
-  <url><loc>https://meath-arms.com/rooms</loc></url>
-  <url><loc>https://meath-arms.com/bar</loc></url>
-  <url><loc>https://meath-arms.com/explore</loc></url>
-  <url><loc>https://meath-arms.com/reviews</loc></url>
-  <url><loc>https://meath-arms.com/faqs</loc></url>
-  <url><loc>https://meath-arms.com/gallery</loc></url>
-  <url><loc>https://meath-arms.com/book</loc></url>
-  <url><loc>https://meath-arms.com/contact</loc></url>
+  <url><loc>https://meatharms.vercel.app/</loc></url>
+  <url><loc>https://meatharms.vercel.app/rooms</loc></url>
+  <url><loc>https://meatharms.vercel.app/bar</loc></url>
+  <url><loc>https://meatharms.vercel.app/explore</loc></url>
+  <url><loc>https://meatharms.vercel.app/reviews</loc></url>
+  <url><loc>https://meatharms.vercel.app/faqs</loc></url>
+  <url><loc>https://meatharms.vercel.app/gallery</loc></url>
+  <url><loc>https://meatharms.vercel.app/book</loc></url>
+  <url><loc>https://meatharms.vercel.app/contact</loc></url>
 </urlset>
